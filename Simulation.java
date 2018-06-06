@@ -20,23 +20,6 @@ public class Simulation{
         startState.x = parameters[4];
         startState.y = parameters[5];
     }
-    /*
-    Simulation pierwotnie była runnable
-    @Override
-    public void run() {
-        state.set(startState);
-        computePositions();
-        repaint();
-
-        while(!exit) {
-            while(pause) { try { Thread.sleep(1); } catch (InterruptedException e) { } }
-            simulate();
-            computePositions();
-            repaint();
-            try { Thread.sleep((int)(h*1000)); } catch (InterruptedException e) { }
-        }
-    }
-    */
 
     public void f(Vec4 out, Vec4 in) {
         /*
